@@ -5,6 +5,12 @@
 }
 
 
+@font-face {
+	font-family: pixelFont;
+	src: url("assets/PressStart2P.ttf");
+  }
+
+
 .background {
 	/*background-image: linear-gradient(135deg,rgb(80, 80, 80),#303234);
 	*/
@@ -12,14 +18,73 @@
 }
 
 #logo-img {
-	margin-top: 23px;
 	height: 75px;
-	margin-left: 45px;
+	margin-left: 25px;
 
 }
 #logo-text {
-	height: 75px;
-	margin-left: 30px
+	font-family: pixelFont;
+	font-size: 18px;
+	color:rgb(223, 223, 223);
+	
+	border-color: #01eef6;
+	border-width: 1px;
+	border-style: none;
+
+	margin-top: 42px;
+	margin-left: 5px;
+
+	transition: 0.3s;
+}
+
+#logo-text-holder {
+	width: 100%;
+	height: 100px;
+	border-color: #f6019d;
+	border-width: 1px;
+	border-style: none;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+#logo-hidden-text {
+	font-family: pixelFont;
+	font-size: 10px;
+	color:rgb(223, 223, 223, 0.0);
+	margin-top: 15px;
+
+	transition: 0.3s;
+}
+
+.logo-box {
+	
+	border-color: #01f62a;
+	border-width: 1px;
+	border-style: none;
+	height: 120px;
+	width: 450px;
+	margin-left: 15%;
+	margin-top: 20px;
+	background: #303234;
+	border-radius: 25px;
+	box-shadow: -15px -15px 35px #49494966, 15px 15px 35px rgba(0, 0, 0, 0.4);
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	transition: 0.3s;
+}
+
+.logo-box:hover #logo-text {
+	margin-top: 30px;
+}
+
+.logo-box:hover #logo-hidden-text {
+	color:rgb(223, 223, 223, 0.5);
 }
 
 
@@ -79,24 +144,7 @@
 	color: rgb(233, 233, 233);
 }
 
-.logo-box {
-	
-	border-color: #f6019d;
-	border-width: 1px;
-	border-style: none;
-	height: 120px;
-	width: 450px;
-	margin-left: 15%;
-	margin-top: 20px;
-	background: #303234;
-	border-radius: 25px;
-	box-shadow: -15px -15px 35px #49494966, 15px 15px 35px rgba(0, 0, 0, 0.4);
-	position: relative;
-	justify-content: center;
-	align-items: center;
-	transition: 0.3s;
-	display: inline-block;
-}
+
 
 .helloname {
 	border-color: #01f684;
@@ -108,13 +156,43 @@
 
 .smile {
 	position: absolute;
-	margin-left: 62%;
+	margin-left: 60%;
 	opacity: 0.0;
 	transition: 0.5s;
 }
 
 .intro-space {
 	
+	border-color: #01f62a;
+	border-width: 1px;
+	border-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 300px;
+
+	margin-top: 75px;
+
+	transition: 1.5s;
+}
+
+.intro-paragraph{
+	border-color: #def601;
+	border-width: 1px;
+	border-style: none;
+
+	margin-top: 50px;
+	width: 700px;
+	height: 100%;
+
+	text-align: center;
+	font-family: pixelFont;
+	font-size: 15px;
+	color:rgb(236, 236, 236);
+}
+
+.intro-main {
 	border-color: #f6019d;
 	border-width: 1px;
 	border-style: none;
@@ -122,9 +200,8 @@
     justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 300px;
+	height: 150px;
 
-	transition: 1.5s;
 }
 
 .intro-space:hover .helloname {
@@ -270,9 +347,9 @@
 	margin-top: 0%;
 	color:rgb(70, 70, 70);
 	z-index: 1;
-	font-size: 20px;
-	font-family: "Consolas";
-	font-weight: bolder;
+	font-size: 15px;
+	font-family: pixelFont;
+	font-weight: normal;
 	text-align: center;
 	transition: 0.3s;
 }
