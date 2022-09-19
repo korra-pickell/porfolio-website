@@ -65,6 +65,8 @@ html::-webkit-scrollbar {
 	height: 100%;
 	border-radius: 0px;
 	margin-left: 35px;
+
+	transition: 0.5s;
 }
 
 .light-strip-right {
@@ -72,7 +74,10 @@ html::-webkit-scrollbar {
 	height: 100%;
 	border-radius: 0px;
 	margin-right: 35px;
+
+	transition: 0.5s;
 }
+
 
 #logo-img {
 	height: 75px;
@@ -204,20 +209,75 @@ html::-webkit-scrollbar {
 
 
 .helloname {
-	border-color: #01f684;
+	border-color: #f6f201;
 	border-width: 1px;
 	border-style: none;
 	transition: 0.4s;
 }
 
 .smile {
+	border-color: #1101f6;
+	border-width: 2px;
+	border-style: none;
+	
 	letter-spacing: -25px;
 	position: absolute;
 	margin-top: 5px;
-	margin-left: 60%;
 	opacity: 0.0;
-	transition: 0.5s;
+	transition: 0.4s;
 }
+
+.smile2 {
+
+	
+	border-color: #01f6b9;
+	border-width: 2px;
+	border-style: none;
+
+	letter-spacing: -25px;
+	
+	margin-top: 10px;
+	opacity: 0.0;
+
+	transition: 0.4s;
+}
+
+
+#helloname-bin {
+
+	border-color: #f601cd;
+	border-width: 1px;
+	border-style: none;
+
+	
+	width: 1000px;
+	height: 100px;
+	margin-left: 100px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	transition: 0.4s;
+}
+
+#smile-bin {
+
+	border-color: #f601cd;
+	border-width: 1px;
+	border-style: none;
+
+	margin-top: 10px;
+	width: 120px;
+	height: 110px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	transition: 0.4s;
+}
+
 
 .intro-space {
 	
@@ -232,7 +292,6 @@ html::-webkit-scrollbar {
 
 	margin-top: 75px;
 
-	transition: 1.5s;
 }
 
 .intro-paragraph{
@@ -268,13 +327,17 @@ html::-webkit-scrollbar {
 
 }
 
-.intro-space:hover .helloname {
+.intro-space:hover #helloname-bin {
 	margin-right: 40px;
 }
 
+
 .intro-space:hover .smile {
 	opacity: 1.0;
-	margin-left: 58%;
+}
+
+.intro-space:hover .smile2 {
+	opacity: 0.2;
 }
 
 
@@ -377,7 +440,6 @@ html::-webkit-scrollbar {
 
 .neumorphism-bin-d:hover {
 	box-shadow: -20px -20px 30px #49494966, 20px 20px 30px rgba(0, 0, 0, 0.4);
-	height: 260px;
 }
 
 .bin-icon-div {
@@ -408,7 +470,7 @@ html::-webkit-scrollbar {
 
 	height: 50px;
 	width: 250px;
-	margin-top: 0%;
+	margin-top: 1%;
 	color:rgb(70, 70, 70);
 	z-index: 1;
 	font-size: 15px;
@@ -446,7 +508,7 @@ html::-webkit-scrollbar {
 
 .neumorphism-bin-d:hover .project-icon {
 	color:rgb(138, 138, 138);
-
+	font-size: 105px;
 }
 
 .blue-glow {
