@@ -16,8 +16,12 @@ html::-webkit-scrollbar {
 @font-face {
 	font-family: pixelFont;
 	src: url("assets/PressStart2P.ttf");
-  }
+}
 
+@font-face {
+	font-family: pixelFontSmall;
+	src: url("assets/FreePixel.ttf");
+}
 
 .background {
 	/*background-image: linear-gradient(135deg,rgb(80, 80, 80),#303234);
@@ -305,8 +309,8 @@ html::-webkit-scrollbar {
 	height: 100%;
 
 	text-align: center;
-	font-family: pixelFont;
-	font-size: 15px;
+	font-family: pixelFontSmall;
+	font-size: 30px;
 	color:rgb(236, 236, 236);
 }
 
