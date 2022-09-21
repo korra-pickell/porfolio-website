@@ -28,8 +28,6 @@ html::-webkit-scrollbar {
 	src: url("assets/Windows\ Regular.ttf");
 }
 
-
-
 .background {
 	/*background-image: linear-gradient(135deg,rgb(80, 80, 80),#303234);
 	*/
@@ -125,7 +123,6 @@ html::-webkit-scrollbar {
 	transition: 0.3s;
 }
 
-
 .header-space:hover #title-back {
 	opacity: 0.3;
 }
@@ -161,15 +158,58 @@ html::-webkit-scrollbar {
 	width: 50px;
 }
 
+#description-div {
+
+	border-color: #01f6cd;
+	border-width: 1px;
+	border-style: none;
+	width: 100%;
+	height: 100px;
+
+	display: flex;
+	flex-direction: row;
+	align-items: left;
+}
+
+#left-side-arrow-div {
+	border-color: #f60115;
+	border-width: 1px;
+	border-style: none;
+
+	
+	width: 60px;
+	height: 100%;
+
+	color:rgb(255, 255, 255);
+	
+	font-size: 70px;
+	font-family: pixelFontSmall;
+}
+
+#left-side-arrow {
+	margin-left: 10px;
+	margin-top: 15px;
+	opacity: 0.1;
+	
+	transition: 0.3s;
+}
+
+#description-div:hover #left-side-arrow {
+	margin-left: 15px;
+	opacity: 1.0;
+}
+
 #task-description {
 	margin-left: 10px;
+	margin-top: 15px;
+
 	font-size: 30px;
 	font-family: pixelFontSmall;
 	color: aliceblue;
 }
 
 .neumorphism-bin-d {
-	height: 450px;
+	height: 400px;
 	width: 70%;
 
 	margin-top: 100px;
@@ -191,7 +231,7 @@ html::-webkit-scrollbar {
 	height: 15%;
 	text-align: left;
 	
-	margin-left: 40px;
+	margin-left: 5%;
 	padding-top: 30px;
 
 	font-size: 30px;
@@ -201,11 +241,147 @@ html::-webkit-scrollbar {
 	transition: 0.3s;
 }
 
-.neumorphism-bin-d:hover .bin-title {
-	color:rgb(138, 138, 138);
-	margin-left: 50px;
+.neumorphism-bin-d:hover {
+	width: 71%;
 }
 
+.neumorphism-bin-d:hover .bin-title {
+	color:rgb(138, 138, 138);
+	margin-left: 6%;
+}
+
+.bin-body {
+	border-color: #01f6cd;
+	border-width: 1px;
+	border-style: none;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	margin-top: 1%;
+
+	width: 100%;
+	height: 80%;
+}
+
+.image-holder {
+	border-color: #1ef601;
+	border-width: 1px;
+	border-style: none;
+	width: 31%;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.arch-image-holder {
+	border-color: #1ef601;
+	border-width: 1px;
+	border-style: none;
+	width: 80%;
+
+	margin-top: -15%;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.demo-image {
+	width: 80%;
+	height: 80%;
+	border-radius: 10%;
+
+	transition: 0.3s;
+}
+
+.demo-image:hover {
+	width: 90%;
+	height: 90%;
+}
+
+.arch-image {
+	width: 84%;
+	height: 84%;
+	border-radius: 3%;
+
+	transition: 0.3s;
+}
+
+.neumorphism-bin-d:hover .arch-image {
+	width: 87%;
+	height: 87%;
+}
+
+#arch-left-side {
+	border-color: #01f6cd;
+	border-width: 1px;
+	border-style: none;
+
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	width: 55%;
+	height: 100%;
+	margin-left: 5%;
+
+	font-size: 22px;
+	font-family: pixelFontSmall;
+	color: rgb(255, 255, 255);
+}
+
+#arch-right-side {
+	border-color: #01f6cd;
+	border-width: 1px;
+	border-style: none;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 44%;
+	height: 100%;
+}
+
+#arch-left-text {
+	width: 450px;
+}
+
+.ti-col {
+	border-color: #01f6cd;
+	border-width: 1px;
+	border-style: none;
+
+	font-size: 20px;
+	font-family: pixelFontSmall;
+	color: rgb(255, 255, 255);
+	opacity: 0.7;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	width: 270px;
+	height: 80%;
+
+	padding: 10px;
+
+	transition: 0.2s;
+}
+
+.ti-col:hover {
+	opacity: 1.0;
+}
 
 .cyan-glow {
 	background: #00FFFF;
